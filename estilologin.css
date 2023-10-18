@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(ima.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background: rgb(175, 173, 175);
+    
+
+}
+form{
+    padding: 50px;
+    display:flex ;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, o.2) ;
+    border-radius: 15px ;
+    background-color: rgb(214, 122, 194);
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(6, 1, 10);
+    margin-bottom: 25px;
+}
+label, p {
+    font-size: 17px;
+    color: rgb(11, 11, 12);
+    margin-bottom: 15xp;   
+}
+.texto{
+    
+    font-size:20px ;
+    color: rgb(5, 7, 7);
+    text-transform: uppercase;
+
+}
+input{
+    padding: 11px 11px;
+    border: 1px rgb(32, 172, 88);
+    border-radius: 25px;
+    margin-bottom: 25px;
+    background-color: antiquewhite;
+    outline: none;
+    color: rgb(114, 6, 6);
+    font-size: 20px;
+}
+.btn-1{
+    background-color: aqua;
+    font-size: 15px;
+    color: azure;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-1{
+    background-color: rgb(6, 70, 70);
+}
+.remenber{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
