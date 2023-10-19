@@ -9,50 +9,54 @@
   }
 
   body{
-    background-color: rgb(2, 10, 0 );
+    background-color:#0f0d0d;
     font-family: 'Poppis', sans-serif;
   }
 
   .container{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 } 
 .swiper-button-prev::after{
-    font-size: 25px;
+    font-size: 30px;
 }
 .swiper-button-next::after{
-    font-size: 25px;
+    font-size: 30px;
 }
 .swiper-button-next{
-    color: brown;
+    color: rgb(204, 12, 21);
 }
 .swiper-button-prev{
-    color: brown;
+    color: rgb(243, 5, 5);
 }
 .swiper-pagination-bullet{
-    background-color: antiquewhite;
+    background-color: rgb(56, 6, 19);
     opacity: 1;
 }
 .swiper-pagination-bullet-active{
-    background-color: maroon;
+    background-color: rgb(77, 20, 20);
 }
 .menu{
-    position: absolute;
-    top: 20px;
+    position:relative;
+    top: 0;
     left: 0;
     right: 0;
-    display: flex;
+   
     justify-content: center;
-    z-index: 1000;
+    z-index: 100;
 }
 .navbar{
-    display: flex;
+   display: flex;
+    background: #915b22;
+    
+   
+ 
 }
 .menu-1{
-    margin-right: 180px;
+    margin-right: 200px;
 }
 .menu-2{
-    margin-left: 180px;
+    margin-left: 500px;
     display: flex;
     align-items: center;
 }
@@ -70,14 +74,12 @@
 
 .social{
     margin: 0 10px;
-    height: 40px;
+    height: 70px;
     width: 40px;
-    border: 1px solid red;
+   
     border-radius: 50%;
 }
-.social:hover{
-    background-color: red;
-}
+
 .social img{
     margin: 8px 0 0 10px;
 }
@@ -106,35 +108,37 @@
 }
 
 .header-content{
-    margin-top: 200px ;
+    margin-top: 10px ;
     padding-bottom: 50px;
+  
+
 }
 .header-content h1{
-  font-size: 50px;
-  color: darkgoldenrod;
-  font-weight: 800;
-  text-transform: uppercase;
+  font-size: 70px;
+  color: #d1bebe;
+  font-weight: 1000;
   text-align: center;
   
 }
+
 .slider{
     display: flex;
     align-items: center;
 }
 
 .slider-txt{
-    margin-left: 85px;
+    margin-left: 75px;
     width: 50%;
 }
 
 .slider-txt h1{
-    font-size: 70px;
-    color: aliceblue;
+    font-size: 60px;
+    color: rgb(141, 79, 29);
     text-transform: uppercase;
     font-weight: 800;
 }
 .slider-txt p{
-    font-size: 18px;
+    font-size: 20px;
     color: rgb(252, 253, 253);
 }
 .slider-img {
@@ -142,25 +146,25 @@
 }
 .slider-img img{
     margin-right: 200px;
-    width: 510px;
+    width: 480px;
 }
 .products{
-    background-color: rgb(17, 12, 12);
+    background-color: #915b22;
 }
 .tabs{
     display: flex;
     flex-wrap: wrap;
-    padding: 100px 0px;
+    padding: 10px 0px;
 }
 .tabs label{
-    width: 15%;
+    width: 20%;
     order: 1;
     display: block;
     padding: 20px 0;
     text-align: center;
     cursor: pointer;
-    color: burlywood;
-    font-weight: 700;
+    color: rgb(32, 19, 2);
+    font-weight: 1000;
     transition: background ease 0.2s;
 }
 .tabs .tab{
@@ -168,7 +172,7 @@
     flex-grow: 1;
     width: 100%;
     display:none ;
-    padding-top: 25px;
+    padding-top: 15px;
 }
 
 .tabs input[type="radio"]{
@@ -176,8 +180,8 @@
 }
 
 .tabs input[type="radio"]:checked + label{
-    border-bottom: 2px solid red;
-    color: aliceblue;
+    border-bottom: 2px solid black;
+    color: rgb(148, 186, 219);
 }
 .tabs input[type="radio"]:checked + label+ .tab{
     display: block;
@@ -185,7 +189,7 @@
 .product{
     display: flex;
     align-items: center;
-    padding: 25px;
+    padding: 20px;
     margin: 0 10px;
 }
 .product-img{
@@ -196,12 +200,12 @@
     display: inline-block;
     padding: 5px 7px;
     line-height: 15px;
-    color: aliceblue;
+    color: rgb(3, 3, 3);
     font-size: 14px;
     text-transform: uppercase;
-    font-weight: 800;
-    border: 2px solid chocolate;
-    border-radius: 10px;
+    font-weight: 1000;
+    border: 2px solid rgb(48, 22, 4);
+    border-radius: 20px;
     margin-bottom: 50px;
     
 }
@@ -215,38 +219,43 @@
     text-align: left;
 }
 .product-txt h4{
-    color: aliceblue;
-    font-size: 18px;
+    color: rgb(31, 18, 1);
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 80px;
     margin-bottom: 5px;
 }
 .product-txt p{
-    color: #A7A7A7;
+    color: #1a0101;
     font-size: 16px;
     margin-bottom: 15px;
 }
 
 .product-txt span{
-    color: antiquewhite;
-    font-size: 16px;
-    margin-bottom: 15px;
+    color: rgb(31, 18, 151);
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 700;
+
 }
 .info{
-    padding: 100px 0px;
+    padding: 60px 0px;
     display: flex;
     align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 .info-img{
     width: 50%;
 }
 .info-img img{
     width: 500px;
-    height: 250px;
+    height: 300px;
 }
 .info-txt{
-    width: 50px;
+    width: 900px;
 }
+
 .info-txt h2{
     font-size: 75px;
     color: rgb(235, 237, 238);
@@ -255,34 +264,25 @@
     margin-bottom: 25px;
 }
 
-.info-txt p{
-    font-size: 18px;
-    color: rgb(240, 139, 8);
+.info-txt p {
+    font-size: 20px;
+    color: rgb(239, 241, 239);
     margin-bottom: 50px;
-}
-.btn-2{
-    display: inline-block;
-    padding: 15px 35px;
-    background-color: red;
-    color: aliceblue;
-    font-weight: 800;
-    text-transform: uppercase;
-    border-radius: 50px;
 }
 
-.btn-2:hover{
-    background-color: rgb(22, 17, 17);
-}
 .horario{
-    padding: 100px 0px;
-    background-color: black;
+    padding: 10px 0px;
+    background-color:#6e4617;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 .horario-info h2{
-    font-size: 75px;
-    color: aliceblue;
+    font-size: 60px;
+    color: rgb(43, 31, 8);
     font-weight: 800;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+
 }
 .horario-txt{
     display:  flex;
@@ -290,22 +290,23 @@
 
 }
 .txt{
-    color: #fdf7f7;
+    color: #201901;
+    
 }
 .txt h4{
-    font-size: 18px;
-    color: antiquewhite;
+    font-size: 30px;
+    color: rgb(10, 10, 10);
     margin-bottom:30px ;
+    font-weight: 1000;
 }
 .txt p{
-    font-size: 18px;
-    text-transform: uppercase;
-font-weight: 600;
-margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
 
 }
 .footer{
-    padding: 100px 0px;
+    padding: 20px 0px;
     display: flex;
     justify-content: space-between;
 
