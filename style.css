@@ -93,6 +93,11 @@
     padding: 20px;
     color: rgb(235, 229, 226);
     display: block;
+    border: 1px solid rgb(255, 1, 1);
+    background: #09ff00;
+    border-radius: 30px;
+    margin-bottom: 15px;
+  
 }
 .menu .navbar ul li a:hover{
     color: red;
@@ -142,7 +147,12 @@
     color: black;
     text-transform: uppercase;
     font-weight: 800;
+    border: 2px solid rgb(255, 1, 1);
+    border-radius: 50px;
+    margin-bottom: 50px;
+    background-color: #f2f3f3;
 }
+
 .slider-txt p{
     font-size: 20px;
     color: rgb(250, 249, 249);
@@ -188,7 +198,14 @@
 
 .tabs input[type="radio"]:checked + label{
     border-bottom: 2px solid black;
-    color: rgb(148, 186, 219);
+    color: rgb(0, 110, 206);
+    border: 2px solid rgb(255, 1, 1);
+    border-radius: 50px;
+    margin-bottom: 50px;
+    font-size: 30px; 
+}
+.tabs input[type="radio"]:checked + label:hover{
+    background: #ffffff;
 }
 .tabs input[type="radio"]:checked + label+ .tab{
     display: block;
@@ -274,6 +291,11 @@
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 25px;
+    border: 2px solid rgb(1, 255, 56);
+    border-radius: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    background: #000000;
 }
 
 .info-txt p {
