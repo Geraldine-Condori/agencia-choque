@@ -83,6 +83,7 @@
 
 .social img{
     margin: 8px 0 0 10px;
+        
 }
 .menu .navbar ul li{
     position: relative;
@@ -93,10 +94,10 @@
     padding: 20px;
     color: rgb(235, 229, 226);
     display: block;
-    border: 1px solid rgb(255, 1, 1);
-    background: #09ff00;
-    border-radius: 30px;
-    margin-bottom: 15px;
+    border: 2px solid rgb(13, 40, 161);
+    background: #000200;
+    border-radius: 60px;
+    margin-bottom: 10px;
   
 }
 .menu .navbar ul li a:hover{
@@ -143,14 +144,14 @@
 }
 
 .slider-txt h1{
-    font-size: 60px;
-    color: black;
+    font-size: 50px;
+    color: rgb(144, 189, 209);
     text-transform: uppercase;
     font-weight: 800;
-    border: 2px solid rgb(255, 1, 1);
+    border: 3px solid rgb(14, 26, 185);
     border-radius: 50px;
     margin-bottom: 50px;
-    background-color: #f2f3f3;
+    background-color: #000303;
 }
 
 .slider-txt p{
@@ -165,7 +166,7 @@
     width: 480px;
 }
 .products{
-    background:linear-gradient(black, #fdfeff, black);
+    background:linear-gradient(rgb(58, 58, 58), #fdfeff, rgb(46, 45, 45));
     
 }
 .tabs{
@@ -198,14 +199,15 @@
 
 .tabs input[type="radio"]:checked + label{
     border-bottom: 2px solid black;
-    color: rgb(0, 110, 206);
-    border: 2px solid rgb(255, 1, 1);
+    color: rgb(252, 253, 253);
+    border: 2px solid rgb(14, 26, 185);
     border-radius: 50px;
     margin-bottom: 50px;
     font-size: 30px; 
+    background-color: #000303;
 }
 .tabs input[type="radio"]:checked + label:hover{
-    background: #ffffff;
+    background: #d30b0b;
 }
 .tabs input[type="radio"]:checked + label+ .tab{
     display: block;
@@ -213,7 +215,7 @@
 .product{
     display: flex;
     align-items: center;
-    padding: 20px;
+    
     margin: 0 10px;
 }
 .product-img{
@@ -234,25 +236,21 @@
     
 }
 .product-img img{
-    width: 150px;
-    height: 120px;
+    width: 200px;
+    height: 250px;
 }
 .product-txt{
     width: 50%;
     margin-left: 10px;
     text-align: left;
-}
-.product-txt h4{
-    color: black;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 80px;
-    margin-bottom: 5px;
+    
 }
 .product-txt p{
     color:black;
     font-size: 16px;
     margin-bottom: 15px;
+     
+    
 }
 
 .product-txt span{
@@ -261,6 +259,7 @@
     margin-bottom: 25px;
     font-weight: 700;
 
+  
 }
 .info{
     padding: 30px 0px;
@@ -268,46 +267,54 @@
     align-items: center;
     max-width: 1300px;
     margin: 0 auto;
- background:linear-gradient(black, #1162ac, black);
+    background:linear-gradient(black, #1162ac, black);
   
 }
 .info-img{
     width: 50%;
     
+   
 }
 .info-img img{
+ 
     width: 500px;
-    height: 300px;
+    height: 350px;
     border-radius: 30%;
+    border: 10px solid rgb(6, 6, 7);
 }
 .info-txt{
-    width: 900px;
+    width: 1000px;
 }
 
 .info-txt h2{
    
-    font-size: 75px;
-    color: rgb(235, 237, 238);
+    font-size: 70px;
+    color: rgb(251, 253, 253);
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 25px;
-    border: 2px solid rgb(1, 255, 56);
+    border: 3px solid rgb(9, 14, 82);
     border-radius: 50px;
     margin-bottom: 50px;
     text-align: center;
     background: #000000;
+    
 }
 
 .info-txt p {
     font-size: 20px;
     color: rgb(239, 241, 239);
     margin-bottom: 50px;
+    
 }
+
 
 .horario{
     padding: 0px ;
-    background-color:#f9f9fc;
+    background:linear-gradient(rgb(58, 58, 58), #fdfeff, rgb(46, 45, 45));
     max-width: 1500px;
+   
+   
 
 }
 .horario-info h2{
@@ -316,25 +323,39 @@
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 10px;
-
+    background: #1162ac;
+    
+}
+.horario-info h5{
+    font-size: 40px;
+    color: rgb(0, 5, 5);
+    font-weight: 800;
+    border-radius: 10px;
+    padding:8px 7px;  
+   
 }
 .horario-txt{
+     
     display:  flex;
     justify-content: space-between;
-
 }
+
 .txt{
+    margin-bottom:20px ;
     color: #080600;
+   
     
 }
 .txt h4{
-    font-size: 30px;
-    color: rgb(10, 10, 10);
-    margin-bottom:30px ;
+
+    font-size: 25px;
+    color: rgb(3, 0, 0);
+    margin-bottom:20px ;
     font-weight: 1000;
+    
 }
 .txt p{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 800;
     margin-bottom: 15px;
 
@@ -346,7 +367,7 @@
 
 }
 .links h4{
-    color: aqua;
+    color: rgb(0, 2, 2);
     text-transform: uppercase;
     margin-bottom: 25px;
 
@@ -357,3 +378,4 @@
     margin-bottom: 5px;
     display: inline-block;
 }
+
