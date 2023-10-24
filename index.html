@@ -9,9 +9,15 @@
     <!-- impotando libreria de java script -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/css/modal.css">
 </head>
 
 <body>
+
+
+
+
+
     <header>
 
         <div class="menu container">
@@ -28,7 +34,8 @@
                     <ul>
                         <li><a href="#">INICIO</a></li>
                         <li><a href="#producto">PRODUCTOS</a></li>
-                        <li><a href="#horario">DATOS</a></li>
+                        <li><a href="#" id="openModalBtn">RESERVAS</a></li>
+
                     </ul>
                 </div>
 
@@ -39,7 +46,7 @@
                     </ul>
                     <!-- Iconos de redes sociales -->
                     <div class="socials">
-                        <a href="https://wa.me/68286328 ">
+                        <a href="https://wa.me/72467634 ">
                             <div class="social">
                                 <img src="imagenes/s1.svg" alt="">
                             </div>
@@ -52,9 +59,51 @@
             </nav>
 
         </div>
+
+        <!-- modal -->
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 class="titulo">Datos de Cliente</h2>
+                <form id="registrationForm">
+                    <label for="username">Nombre Apellido</label>
+                    <input type="text" id="username" name="username" required><br>
+
+                    <label for="miSelect">Elige un Producto:</label>
+                    <select id="miSelect">
+                        <option value="manzana">Coca Cola </option>
+                        <option value="banana">Fanta</option>
+                        <option value="uva">Sprite</option>
+                        <option value="pera">pepsi</option>
+                        <option value="manzana">Agua</option>
+                        <option value="banana">Pura Vida</option>
+                        <option value="uva">Maltin</option>
+                        <option value="pera">Malta Real</option>
+                    </select>
+                    <!-- cantidad -->
+                    <label for="username">Cantidad(Paquetes)</label>
+                    <input type="text" id="username" name="username" required placeholder="Ingrese la cantidad de producto"><br>
+
+
+                    <label for="password">Direccion:</label>
+                    <input type="text" id="password" name="password" required><br>
+
+                    <label for="username">Telefono</label>
+                    <input type="telefono" id="username" name="username" required><br>
+
+
+
+                    <div class="btn1">
+                        <button class="btn" type="submit">Reservar</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- fin de modal -->
         <!-- Contenedor del carrusel Swiper -->
         <div class="header-content container">
-
             <!-- Título de la página -->
             <h1>AGENCIA DE REFRESCOS "CHOQUE"</h1>
             <div class="swiper mySwiper-1">
@@ -150,7 +199,7 @@
                                 <div class="product">
                                     <!-- Imagen y detalles del producto -->
                                     <div class="product-img">
-                                        
+
                                         <img src="/imagenes/1.png" alt="">
                                     </div>
                                     <div class="product-txt">
@@ -165,7 +214,7 @@
                             <div class="swiper-slide">
                                 <div class="product">
                                     <div class="product-img">
-                                        
+
                                         <img src="imagenes/19.png" alt="">
                                     </div>
                                     <div class="product-txt">
@@ -180,7 +229,7 @@
                             <div class="swiper-slide">
                                 <div class="product">
                                     <div class="product-img">
-                                        
+
                                         <img src="imagenes/3.png" alt="">
                                     </div>
                                     <div class="product-txt">
@@ -195,7 +244,7 @@
                             <div class="swiper-slide">
                                 <div class="product">
                                     <div class="product-img">
-                                        
+
                                         <img src="imagenes/4.png" alt="">
                                     </div>
                                     <div class="product-txt">
@@ -210,7 +259,7 @@
                             <div class="swiper-slide">
                                 <div class="product">
                                     <div class="product-img">
-                                        
+
                                         <img src="imagenes/5.png" alt="">
                                     </div>
                                     <div class="product-txt">
@@ -225,7 +274,7 @@
                             <div class="swiper-slide">
                                 <div class="product">
                                     <div class="product-img">
-                                        
+
                                         <img src="imagenes/13.png" alt="">
                                     </div>
                                     <div class="product-txt">
@@ -241,7 +290,7 @@
                             <div class="swiper-slide">
                                 <div class="product">
                                     <div class="product-img">
-                                        
+
                                         <img src="imagenes/22.png" alt="">
                                     </div>
                                     <div class="product-txt">
@@ -257,7 +306,7 @@
                             <div class="swiper-slide">
                                 <div class="product">
                                     <div class="product-img">
-                                        
+
                                         <img src="imagenes/10.png" alt="">
                                     </div>
                                     <div class="product-txt">
@@ -272,7 +321,7 @@
                             <div class="swiper-slide">
                                 <div class="product">
                                     <div class="product-img">
-                                        
+
                                         <img src="imagenes/11.png" alt="">
                                     </div>
                                     <div class="product-txt">
@@ -287,7 +336,7 @@
                             <div class="swiper-slide">
                                 <div class="product">
                                     <div class="product-img">
-                                        
+
                                         <img src="imagenes/14.png" alt="">
                                     </div>
                                     <div class="product-txt">
@@ -302,7 +351,7 @@
                             <div class="swiper-slide">
                                 <div class="product">
                                     <div class="product-img">
-                                        
+
                                         <img src="imagenes/18.png" alt="">
                                     </div>
                                     <div class="product-txt">
@@ -383,7 +432,7 @@
 
                 <!-- Enlaces a redes sociales -->
                 <div class="socials">
-                    <a href="https://wa.me/68286328 ">
+                    <a href="https://wa.me/72467634 ">
                         <div class="social">
                             <img src="imagenes/s1.svg" alt="">
                         </div>
@@ -404,6 +453,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="/assets/js/modal.js"></script>
 </body>
 
 </html>
