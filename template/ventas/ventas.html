@@ -1,211 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>PANEL DE VENTAS</title>
-        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
-        <link href="/assets/css/styles.css" rel="stylesheet" />
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    </head>
-    <body class="sb-nav-fixed">
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="/template/index.html">AGENCIA CHOQUE</a>
-            <!-- Sidebar Toggle-->
-            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-            <!-- Navbar Search-->
-            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-                <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Buscar...." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
-                </div>
-            </form>
-            <!-- Navbar-->
-            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#!">Ajustes</a></li>
-                        <li><a class="dropdown-item" href="#!">.</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="/index.html">Cerrar Sesión</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div id="layoutSidenav">
-            <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-                    <div class="sb-sidenav-menu">
-                        <div class="nav">
-                           
-                            <div class="sb-sidenav-menu-heading">Interfaces</div>
-                           
-                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
-                                </nav>
-                            </div>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                                CONFIGURACION
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                        USUARIO
-                        
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
-                                    
-                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                        DATOS-AGENCIA
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
-                                    
-                                </nav>
-                            </div>
-                           
-                            <a class="nav-link" href="charts.html">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
-                                CLIENTE
-                            </a>
-                            <a class="nav-link" href="charts.html">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-people-carry-box"></i></div>
-                                EMPLEADO
-                            </a>
-                            <a class="nav-link" href="charts.html">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-sack-dollar"></i></div>
-                                VENTAS
-                            </a>
 
-                            <a class="nav-link" href="charts.html">
-                                <div class="sb-nav-link-icon"><i class="fa-brands fa-product-hunt"></i></div>
-                                PRODUCTOS
-                            </a>
-                           
-                            <a class="nav-link" href="charts.html">
-                                <div class="sb-nav-link-icon"><i class="fa-regular fa-clipboard"></i></i></div>
-                                REPROTES
-                            </a>
-                            
-                        </div>
-                    </div>
-                    
-                </nav>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>PANEL DE VENTAS</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link href="/assets/css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Alerta toastr CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="/template/index.html">AGENCIA CHOQUE</a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+                class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Buscar...." aria-label="Search for..."
+                    aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i
+                        class="fas fa-search"></i></button>
             </div>
-            <div id="layoutSidenav_content">
-                <main>
-                    <!-- nombresss xxxxxxxxxxxxxxxxxxxxxxxxx -->
-                    <div class="container-fluid px-4">
-                        <h1 class="mt-4">VENTAS</h1>
-                        <ol class="breadcrumb mb-4">
-                            
-                        </ol>
-                       <!-- tablas de usuario -->
+        </form>
+        <!-- Navbar-->
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#!">Ajustes</a></li>
+                    <li><a class="dropdown-item" href="#!">.</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="/index.html">Cerrar Sesión</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
 
-                       <button class="btn btn-primary mb-2" type="button" onclick="frmPart();">Nuevo <i
-                        class="fa-solid fa-user-plus"></i></button>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="tile">
-                            <div class="tile-body">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-hover" id="tblUsuarios">
-                                        <thead class="table-dark">
-                                            <tr>
-                                                <th>N°</th>
-                                                <th>Id Venta</th>
-                                                <th>Producto</th>
-                                                <th>Cantidad </th>
-                                                <th>Precio Unitario</th>
-                                                <th>Fecha Venta</th>
-                                                <th>Total Venta </th>
-                                                <th>Estado</th>
-                                                <th></th>
-                                           
-                                            </tr>
-                                        </thead>
-                                        <!-- datos de tabla -->
-                                        <tbody>
-                                            <tr>
-                                              <th scope="row">1</th>
-                                              <td>123</td>
-                                              <td>Pepsi</td>
-                                              <td>5</td>
-                                              <td>45 bs</td>
-                                              <td>12/02/2023</td>
-                                              <td>225 bs</td>
-                                              
-                                              <td><span class="badge bg-success">Activo</span></td>
-                                              <td><button class="btn btn-primary" type="button" onclick="btnEditarUser"><i class="fa-solid fa-pen-to-square"></i></button> <button class="btn btn-danger" type="button" onclick="btnEliminarUser"><i class="fa-solid fa-trash"></i></button></td>
+                        <div class="sb-sidenav-menu-heading">Interfaces</div>
 
-                                            </tr>
-                                            <tr>
-                                              <th scope="row">2</th>
-                                              <td>145</td>
-                                              <td>Fanta</td>
-                                              <td>3</td>
-                                              <td>52 bs</td>
-                                              <td>12/02/2023</td>
-                                              <td>156 bs</td>
-                                              <td><span class="badge badge-danger">Inactivo</span></td>
-                                              <td><button class="btn btn-primary" type="button" onclick="btnEditarUser"><i class="fa-solid fa-pen-to-square"></i></button> <button class="btn btn-danger" type="button" onclick="btnEliminarUser"><i class="fa-solid fa-trash"></i></button></td>
+                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="layout-static.html">Static Navigation</a>
+                                <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
+                            aria-expanded="false" aria-controls="collapsePages">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            CONFIGURACION
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
+                                    aria-controls="pagesCollapseAuth">
+                                    USUARIO
 
-                                            </tr>
-                                            <tr>
-                                              <th scope="row">3</th>
-                                              <td>543</td>
-                                              <td>Coca Cola</td>
-                                              <td>10</td>
-                                              <td>52 bs</td>
-                                              <td>12/02/2023</td>
-                                              <td>1040 bs</td>
-                                              
-                                              <td><span class="badge badge-success">Activo</span></td>
-                                              <td><button class="btn btn-primary" type="button" onclick="btnEditarUser"><i class="fa-solid fa-pen-to-square"></i></button> <button class="btn btn-danger" type="button" onclick="btnEliminarUser"><i class="fa-solid fa-trash"></i></button></td>
-                                            
-                                             
-                                                                                              
+                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                    data-bs-target="#pagesCollapseError" aria-expanded="false"
+                                    aria-controls="pagesCollapseError">
+                                    DATOS-AGENCIA
+                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+
+                            </nav>
+                        </div>
+
+                        <a class="nav-link" href="charts.html">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
+                            CLIENTE
+                        </a>
+                        <a class="nav-link" href="charts.html">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-people-carry-box"></i></div>
+                            EMPLEADO
+                        </a>
+                        <a class="nav-link" href="charts.html">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+                            VENTAS
+                        </a>
+
+                        <a class="nav-link" href="charts.html">
+                            <div class="sb-nav-link-icon"><i class="fa-brands fa-product-hunt"></i></div>
+                            PRODUCTOS
+                        </a>
+
+                        <a class="nav-link" href="charts.html">
+                            <div class="sb-nav-link-icon"><i class="fa-regular fa-clipboard"></i></i></div>
+                            REPROTES
+                        </a>
+
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <!-- nombresss xxxxxxxxxxxxxxxxxxxxxxxxx -->
+                <div class="container-fluid px-4">
+                    <h1 class="mt-4">VENTAS</h1>
+                    <ol class="breadcrumb mb-4">
+
+                    </ol>
+                    <!-- tablas de usuario -->
+                    <!-- sdf -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+
+                                <input id="id" class="form-control" type="hidden" name="id" placeholder="id">
+                                <label for="nombre">Codigo de Producto </label>
+                                <input id="nombre" class="form-control activete" type="text" name="nombre"
+                                    placeholder="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="telefono">Precio (Bs)</label>
+                                    <input id="telefono" class="form-control" type="text" name="telefono" placeholder=""  >
+                                </div>
+                                </div>
+                            <div class="form-group">
+
+                                <input id="id" class="form-control" type="hidden" name="id" placeholder="id">
+                                <label for="nombre">Cantidad  </label>
+                                <input id="nombre" class="form-control activete" type="text" name="nombre"
+                                    placeholder="">
+                            </div>
+                        </div>
+
+                    </div>
+                        <br>
+
+                    <!-- dsf -->
+               
+                       <!-- Button trigger modal -->
+                       <button id="alerta" type="button" class="btn btn-primary mb-4" data-bs-toggle="modal"
+                       data-bs-target="#exampleModal">
+                       Nuevo<i class="fa-solid fa-user-plus"></i>
+                   </button>
+                   <!-- find de button de modal -->
+
+                 
+                 
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tile">
+                                <div class="tile-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-hover" id="tblUsuarios">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th>N°</th>
+                                                    <th>Id Venta</th>
+                                                    <th>Producto</th>
+                                                    <th>Cantidad </th>
+                                                    <th>Precio Unitario</th>
+                                                    <th>Fecha Venta</th>
+                                                    <th>Total Venta </th>
+                                                  
+                                                    <th></th>
+
+                                                </tr>
+                                            </thead>
+                                            <!-- datos de tabla -->
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>123</td>
+                                                    <td>Pepsi</td>
+                                                    <td>5</td>
+                                                    <td>45 bs</td>
+                                                    <td>12/02/2023</td>
+                                                    <td>225 bs</td>
+
+                                               
+                                                    <td> <button
+                                                            class="btn btn-danger" type="button"
+                                                            onclick="btnEliminarUser"><i
+                                                                class="fa-solid fa-trash"></i></button></td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>145</td>
+                                                    <td>Fanta</td>
+                                                    <td>3</td>
+                                                    <td>52 bs</td>
+                                                    <td>12/02/2023</td>
+                                                    <td>156 bs</td>
+                                               
+                                                    <td> <button
+                                                            class="btn btn-danger" type="button"
+                                                            onclick="btnEliminarUser"><i
+                                                                class="fa-solid fa-trash"></i></button></td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>543</td>
+                                                    <td>Coca Cola</td>
+                                                    <td>10</td>
+                                                    <td>52 bs</td>
+                                                    <td>12/02/2023</td>
+                                                    <td>1040 bs</td>
+
+                                               
+                                                    <td> <button
+                                                            class="btn btn-danger" type="button"
+                                                            onclick="btnEliminarUser"><i
+                                                                class="fa-solid fa-trash"></i></button></td>
 
 
-                                            </tr>
-                                          </tbody>
-                                    </table>
+
+
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- FIN DE USUARIO -->
+
+
+
+
                 </div>
-            
-                <!-- FIN DE USUARIO -->
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
 
-
-                       
-                        
                     </div>
-                </main>
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            
-                        </div>
-                    </div>
-                </footer>
-            </div>
+                </div>
+            </footer>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="/assets/js/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/chart-area-demo.js"></script>
-        <script src="assets/demo/chart-bar-demo.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
-        <script src="js/datatables-simple-demo.js"></script>
-    </body>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+
+
+    <!-- Alerta toastr Js -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js">
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+      -->
+    <!-- codigo del alerta -->
+    <script>
+        const alerta = document.querySelector('#alerta');
+        alerta.addEventListener('click', () => {
+            //console.log('diste click');
+            toastr.success('Registrado con Existo', ' Venta ', {
+                "progressBar": true
+            });
+        })
+    </script>
+    <!-- fin de las alertas -->
+
+</body>
+
 </html>
