@@ -1,6 +1,7 @@
 var modal = document.getElementById('myModal');
 var btn = document.getElementById('openModalBtn');
 var span = document.getElementsByClassName('close')[0];
+var x = document.getElementsByClassName('btn')[0];
 var registrationForm = document.getElementById('registrationForm');
 
 btn.onclick = function() {
@@ -10,7 +11,9 @@ btn.onclick = function() {
 span.onclick = function() {
     modal.style.display = 'none';
 }
-
+x.onclick = function() {
+    modal.style.display = 'none';
+}
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = 'none';
