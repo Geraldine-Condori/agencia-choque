@@ -11,8 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <link href="/assets/css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-  <!-- Alerta toastr CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <!-- Alerta toastr CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
 
 </head>
@@ -108,7 +108,10 @@
                             <div class="sb-nav-link-icon"><i class="fa-brands fa-product-hunt"></i></div>
                             PRODUCTOS
                         </a>
-
+                        <a class="nav-link" href="charts.html">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-warehouse"></i></div>
+                            INVENTARIO
+                        </a>
                         <a class="nav-link" href="charts.html">
                             <div class="sb-nav-link-icon"><i class="fa-regular fa-clipboard"></i></i></div>
                             REPROTES
@@ -121,52 +124,21 @@
         </div>
         <div id="layoutSidenav_content">
             <main>
-                <!-- nombresss xxxxxxxxxxxxxxxxxxxxxxxxx -->
+                <!-- titulo -->
                 <div class="container-fluid px-4">
-                    <h1 class="mt-4">VENTAS</h1>
+                    <h1 class="mt-4">PROVEEDOR</h1>
                     <ol class="breadcrumb mb-4">
-
                     </ol>
                     <!-- tablas de usuario -->
-                    <!-- sdf -->
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
 
-                                <input id="id" class="form-control" type="hidden" name="id" placeholder="id">
-                                <label for="nombre">Codigo de Producto </label>
-                                <input id="nombre" class="form-control activete" type="text" name="nombre"
-                                    placeholder="">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="telefono">Precio (Bs)</label>
-                                    <input id="telefono" class="form-control" type="text" name="telefono" placeholder=""  >
-                                </div>
-                                </div>
-                            <div class="form-group">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary mb-4" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Nuevo <i class="fa-solid fa-user-plus"></i>
+                    </button>
+                    <!-- find de button de modal -->
 
-                                <input id="id" class="form-control" type="hidden" name="id" placeholder="id">
-                                <label for="nombre">Cantidad  </label>
-                                <input id="nombre" class="form-control activete" type="text" name="nombre"
-                                    placeholder="">
-                            </div>
-                        </div>
 
-                    </div>
-                        <br>
-
-                    <!-- dsf -->
-               
-                       <!-- Button trigger modal -->
-                       <button id="alerta" type="button" class="btn btn-primary mb-4" data-bs-toggle="modal"
-                       data-bs-target="#exampleModal">
-                       Agregar  <i class="fa-solid fa-floppy-disk"></i>
-                   </button>
-                   <!-- find de button de modal -->
-
-                 
-                 
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="tile">
@@ -176,70 +148,46 @@
                                             <thead class="table-dark">
                                                 <tr>
                                                     <th>N°</th>
-                                                    <th>Id Venta</th>
-                                                    <th>Producto</th>
-                                                    <th>Cantidad </th>
-                                                    <th>Precio Unitario (Bs.)</th>
-                                                    <th>Fecha Venta</th>
-                                                    <th>Total Venta (Bs.) </th>
-                                                  
+                                                    <th>Nombres</th>
+
+                                                    <th>Telefono</th>
+
+                                                    <th>Estado</th>
                                                     <th></th>
 
                                                 </tr>
                                             </thead>
                                             <!-- datos de tabla -->
                                             <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>123</td>
-                                                    <td>Pepsi</td>
-                                                    <td>5</td>
-                                                    <td>45 </td>
-                                                    <td>12/02/2023</td>
-                                                    <td>225</td>
 
-                                               
-                                                    <td> <button
+
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Monica</td>
+                                                    <td>72314733</td>
+                                                    <td><span class="badge bg-success">Activo</span></td>
+                                                    <td><button class="btn btn-primary" type="button"
+                                                            onclick="btnEditarUser"><i
+                                                                class="fa-solid fa-pen-to-square"></i></button> <button
                                                             class="btn btn-danger" type="button"
                                                             onclick="btnEliminarUser"><i
                                                                 class="fa-solid fa-trash"></i></button></td>
-
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>145</td>
-                                                    <td>Fanta</td>
-                                                    <td>3</td>
-                                                    <td>52 </td>
-                                                    <td>12/02/2023</td>
-                                                    <td>156 </td>
-                                               
-                                                    <td> <button
-                                                            class="btn btn-danger" type="button"
-                                                            onclick="btnEliminarUser"><i
-                                                                class="fa-solid fa-trash"></i></button></td>
-
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">3</th>
-                                                    <td>543</td>
-                                                    <td>Coca Cola</td>
-                                                    <td>10</td>
-                                                    <td>52 </td>
-                                                    <td>12/02/2023</td>
-                                                    <td>1040 </td>
-
-                                               
-                                                    <td> <button
+                                                    <td>Marcos</td>
+                                                    <td>3453</td>
+                                                    <td><span class="badge bg-success">Activo</span></td>
+                                                    <td><button class="btn btn-primary" type="button"
+                                                            onclick="btnEditarUser"><i
+                                                                class="fa-solid fa-pen-to-square"></i></button> <button
                                                             class="btn btn-danger" type="button"
                                                             onclick="btnEliminarUser"><i
                                                                 class="fa-solid fa-trash"></i></button></td>
-
-
-
-
-
                                                 </tr>
+
+
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -250,7 +198,43 @@
 
                     <!-- FIN DE USUARIO -->
 
+                    <!-- Modal  ******-->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel"> Nuevo proveedor</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form method="post" id="frmCliente">
+                                  
+                                        <div class="form-group">
+                                            <label for="nombre">Nombres y Apellidos</label>
+                                            <input id="nombre" class="form-control" type="text" name="" placeholder=" ">
+                                        </div>
 
+                                              <div class="form-group">
+                                            <label for="correo">Telefono</label>
+                                            <input id="correo" class="form-control" type="text" name=""
+                                                placeholder="  ">
+                                        </div>
+                                      
+
+
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="button" id="alerta" class="btn btn-primary">Registrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin de Modal *******-->
 
 
                 </div>
@@ -274,7 +258,6 @@
         crossorigin="anonymous"></script>
     <script src="js/datatables-simple-demo.js"></script>
 
-
     <!-- Alerta toastr Js -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -291,13 +274,12 @@
         const alerta = document.querySelector('#alerta');
         alerta.addEventListener('click', () => {
             //console.log('diste click');
-            toastr.success('Con Existo', ' Agregado ', {
+            toastr.success('Registrado con Existo', ' Proveedor ', {
                 "progressBar": true
             });
         })
     </script>
     <!-- fin de las alertas -->
-
 </body>
 
 </html>
