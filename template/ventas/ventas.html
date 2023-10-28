@@ -161,7 +161,7 @@
                        <!-- Button trigger modal -->
                        <button id="alerta" type="button" class="btn btn-primary mb-4" data-bs-toggle="modal"
                        data-bs-target="#exampleModal">
-                       Nuevo<i class="fa-solid fa-user-plus"></i>
+                       Agregar  <i class="fa-solid fa-floppy-disk"></i>
                    </button>
                    <!-- find de button de modal -->
 
@@ -291,7 +291,7 @@
         const alerta = document.querySelector('#alerta');
         alerta.addEventListener('click', () => {
             //console.log('diste click');
-            toastr.success('Registrado con Existo', ' Venta ', {
+            toastr.success('Registrado con Existo', ' Agregado ', {
                 "progressBar": true
             });
         })
