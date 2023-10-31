@@ -54,69 +54,64 @@
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-
+                           
                         <div class="sb-sidenav-menu-heading">Interfaces</div>
-
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
-                            data-bs-parent="#sidenavAccordion">
+                       
+                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" href="layout-static.html">Static Navigation</a>
                                 <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
                             </nav>
                         </div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
-                            aria-expanded="false" aria-controls="collapsePages">
+
+                        <!-- panel incicio  -->
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                             CONFIGURACION
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
-                            data-bs-parent="#sidenavAccordion">
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                    aria-controls="pagesCollapseAuth">
+                                <a class="nav-link " href="#" onclick="usuario()" >
                                     USUARIO
-
+                    
                                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                 </a>
-
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#pagesCollapseError" aria-expanded="false"
-                                    aria-controls="pagesCollapseError">
+                                
+                                <a class="nav-link " href="#" onclick="datos()">
                                     DATOS-AGENCIA
                                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                 </a>
-
+                                
                             </nav>
                         </div>
-
-                        <a class="nav-link" href="charts.html">
+                       
+                        <a class="nav-link" href="#" onclick="cliente()" >
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
                             CLIENTE
                         </a>
-                        <a class="nav-link" href="charts.html">
+                        <a class="nav-link" href="#" onclick="empleados()">
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-people-carry-box"></i></div>
                             EMPLEADO
                         </a>
-                        <a class="nav-link" href="charts.html">
+                        <a class="nav-link" href="#" onclick="ventas( )">
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-sack-dollar"></i></div>
                             VENTAS
                         </a>
 
-                        <a class="nav-link" href="charts.html">
+                        <a class="nav-link" href="#" onclick="productos()">
                             <div class="sb-nav-link-icon"><i class="fa-brands fa-product-hunt"></i></div>
                             PRODUCTOS
                         </a>
-                        <a class="nav-link" href="charts.html">
-                            <div class="sb-nav-link-icon"><i class="fa-solid fa-warehouse"></i></div>
-                            INVENTARIO
+                        <a class="nav-link" href="#" onclick="proveedor()">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-truck-field"></i></div>
+                            PROVEEDOR
                         </a>
-                        <a class="nav-link" href="charts.html">
+                        <a class="nav-link" href="#" onclick="reportes()">
                             <div class="sb-nav-link-icon"><i class="fa-regular fa-clipboard"></i></i></div>
                             REPROTES
                         </a>
-
+                        <!-- fin de panerl -->
                     </div>
                 </div>
 
@@ -305,6 +300,7 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js">
     </script>
+    <script src="/assets/js/direccinar.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

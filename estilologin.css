@@ -94,3 +94,9 @@ input{
     justify-content: space-between;
     margin-bottom: 25px;
 }
+
+.direc a{
+    text-align: center;
+   color: aqua;
+   
+}

@@ -221,6 +221,7 @@
 .tabs input[type="radio"]:checked + label+ .tab{
     display: block;
 }
+
 .product{
     
     align-items: center;
@@ -276,7 +277,7 @@
   
 }
 .info{
-    padding: 30px 0px;
+    padding: 110px 0px;
     display: flex;
     align-items: center;
     max-width: 1300px;
@@ -295,7 +296,7 @@
 .info-img img{
  
     width: 500px;
-    height: 350px;
+    height: 500px;
     border-radius: 30%;
     border: 3px solid rgb(9, 14, 82);
 }

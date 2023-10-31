@@ -51,6 +51,8 @@
                                     <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
                                 </nav>
                             </div>
+
+                            <!-- panel incicio  -->
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                                 CONFIGURACION
@@ -58,13 +60,13 @@
                             </a>
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                    <a class="nav-link " href="#" onclick="usuario()" >
                                         USUARIO
                         
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
                                     
-                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                    <a class="nav-link " href="#" onclick="datos()">
                                         DATOS-AGENCIA
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
@@ -72,29 +74,32 @@
                                 </nav>
                             </div>
                            
-                            <a class="nav-link" href="charts.html">
+                            <a class="nav-link" href="#" onclick="cliente()" >
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
                                 CLIENTE
                             </a>
-                            <a class="nav-link" href="charts.html">
+                            <a class="nav-link" href="#" onclick="empleados()">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-people-carry-box"></i></div>
                                 EMPLEADO
                             </a>
-                            <a class="nav-link" href="charts.html">
+                            <a class="nav-link" href="#" onclick="ventas( )">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-sack-dollar"></i></div>
                                 VENTAS
                             </a>
 
-                            <a class="nav-link" href="charts.html">
+                            <a class="nav-link" href="#" onclick="productos()">
                                 <div class="sb-nav-link-icon"><i class="fa-brands fa-product-hunt"></i></div>
                                 PRODUCTOS
                             </a>
-                            
-                            <a class="nav-link" href="charts.html">
+                            <a class="nav-link" href="#" onclick="proveedor()">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-truck-field"></i></div>
+                                PROVEEDOR
+                            </a>
+                            <a class="nav-link" href="#" onclick="reportes()">
                                 <div class="sb-nav-link-icon"><i class="fa-regular fa-clipboard"></i></i></div>
                                 REPROTES
                             </a>
-                            
+                            <!-- fin de panerl -->
                         </div>
                     </div>
                     
@@ -186,5 +191,6 @@
         <script src="assets/demo/chart-bar-demo.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
         <script src="js/datatables-simple-demo.js"></script>
+        <script src="/assets/js/direccinar.js"></script>
     </body>
 </html>
