@@ -47,7 +47,7 @@
     z-index: 100;
 }
 .navbar{
-   display: flex;
+  
     background:black ;
     
    
@@ -57,7 +57,7 @@
     margin-right: 200px;
 }
 .menu-2{
-    margin-left: 500px;
+    margin-left: 900px;
     display: flex;
     align-items: center;
 }
@@ -398,3 +398,18 @@
     display: inline-block;
 }
 
+.mapa{
+    text-align: center;
+    width: auto;
+}
+.mapa h2{
+    background-color: aliceblue;
+}
+.mapa h4{
+    background-color: aliceblue;
+}
+.mapa iframe{
+    width:1400px;
+    height: 500px;
+    
+}

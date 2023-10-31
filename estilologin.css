@@ -20,12 +20,14 @@ body{
 body{
    
   
-    background:url('imagenes/photo1697923059\ \(2\).jpeg');
+    background:url('imagenes/123.png');
   background-size: cover;
     background-position: center;
 }
 form{
-   
+  
+
+
     padding: 50px;
     display:flex ;
     flex-direction: column;
@@ -33,60 +35,61 @@ form{
     box-shadow: 0 0 20px rgba(0, 0, 0, o.2) ;
     border-radius: 15px ;
     background-color: rgb(12, 130, 226);
-    border: 3px solid rgb(0, 2, 8);
+    border: 1px solid rgb(0, 2, 8);
     background:linear-gradient(rgb(59, 56, 56), #1162ac, rgb(54, 50, 50));
 }
 form .btndiv{
 align-items: center;
 padding: 0px 100px;
+
 }
 h2{
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
-    color: rgb(6, 1, 10);
+    color: rgb(255, 255, 255);
     margin-bottom: 25px;
 }
 label, p {
     font-size: 17px;
-    color: rgb(11, 11, 12);
+    color: rgb(255, 255, 255);
     margin-bottom: 15xp;   
 }
 .texto{
     
     font-size:20px ;
-    color: rgb(5, 7, 7);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
 
 }
 input{
     padding: 11px 11px;
     border: 1px rgb(32, 172, 88);
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 25px;
     background-color: antiquewhite;
     outline: none;
     color: rgb(10, 4, 4);
     font-size: 20px;
-    border: 3px solid rgb(13, 40, 161);
+    border: 2px solid rgb(13, 40, 161);
 }
 .btndiv button{
     align-content: center;
-    padding: 10px 20px;
-    background-color: rgb(11, 24, 24);
+    padding: 10px 10px;
+    background-color: rgb(13, 126, 126);
     font-size: 15px;
     color: azure;
     text-transform: uppercase;
     cursor: pointer;
     border: none;
     border-radius: 10%;
-    border: 3px solid rgb(13, 40, 161);
-    
+    border: 1px solid rgb(13, 40, 161);
+  
     
 }
 .btn button{
     
-    padding: 10px 20px;
+    padding: 5px 10px;
     background-color: rgb(6, 70, 70);
 }
 .remenber{

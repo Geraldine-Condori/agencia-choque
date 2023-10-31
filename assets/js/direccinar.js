@@ -24,3 +24,25 @@ function reportes(){
 function ventas(){
     location.href="/template/ventas/ventas.html"
 }
+
+
+
+$(document).ready(function() {
+    $('#tblUsuarios').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'excel', 'pdf', 'print'
+        ]
+    } );
+} );
+
+
+//cliente
+$(document).ready(function() {
+    $('#tblproductos').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'excel', 'pdf', 'print'
+        ]
+    } );
+} );
